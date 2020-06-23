@@ -1,0 +1,13 @@
+{
+    "name": "elias/temp",
+    "description": "prueba gmail api",
+    "authors": [
+        {
+            "name": "Elias Becerra",
+            "email": "ebecerra@itinnovation.cl"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0"
+    }
+}

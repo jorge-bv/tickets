@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+		<script type="text/javascript" charset="utf-8" src="http://solicitudes.gst:8085/assets/js/jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="../js/highcharts.js"></script>
+		<script type="text/javascript">
+		
+			var chart;
+			$(document).ready(function() {
+				chart = new Highcharts.Chart({
+					chart: {
+						renderTo: 'container',
+						defaultSeriesType: 'column'
+					},
+					title: {
+						text: 'Solicitudes mensuales por tipo'
+					},
+					subtitle: {
+						text: 'Año 2011'
+					},
+					xAxis: {
+						categories: [
+							'Ene', 
+							'Feb', 
+							'Mar', 
+							'Abr', 
+							'May', 
+							'Jun', 
+							'Jul', 
+							'Ago', 
+							'Sep', 
+							'Oct', 
+							'Nov', 
+							'Dic'
+						]
+					},
+					yAxis: {
+						min: 0,
+						title: {
+							text: 'Nro. solicitudes'
+						}
+					},
+					legend: {
+						layout: 'vertical',
+						backgroundColor: '#FFFFFF',
+						align: 'left',
+						verticalAlign: 'top',
+						x: 100,
+						y: 70,
+						floating: true,
+						shadow: true
+					},
+					tooltip: {
+						formatter: function() {
+							return ''+
+								this.x +': '+ this.y;
+						}
+					},
+					plotOptions: {
+						column: {
+							pointPadding: 0.2,
+							borderWidth: 0
+						}
+					},
+				        series: [{
+						name: 'Software',
+						data: [1540,2330,4230,4677,2123,1534,4232,2876,2330,5430,3412,7630]
+				
+					}, {
+						name: 'Hardware',
+						data: [3530,2870,2430,1480,1450,1560,1980,4530,1760,1470,1980,2540]
+				
+					}, {
+						name: 'Logistica',
+						data: [340,430,90,60,120,220,110,130,30,80,120,290]
+				
+					}, {
+						name: 'Conectividad',
+						data: [3670,3764,2330,4230,1240,1340,4520,3230,2340,5320,2440,2340]
+				
+					}]
+				});
+				
+				
+			});
+				
+		</script>
+		
+	</head>
+	<body>
+		
+		<!-- 3. Add the container -->
+		<div id="container" style="width: 800px; height: 400px; margin: 0 auto"></div>
+		
+				
+	</body>
+</html>

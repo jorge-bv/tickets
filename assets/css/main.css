@@ -1,0 +1,120 @@
+/* 
+    Document   : main
+    Created on : 27-10-2011, 12:00:02 PM
+    Author     : MMeliqueo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+html, body {
+height: 100%;
+}
+body{
+    margin: 0 0 0 0;
+    color: #000;
+    font-family: Arial;
+    background-color:#FFFF00;
+}
+a :visited{
+ 	text-decoration: none;
+}
+ 
+#container{
+	width: 950px;
+	border: solid 1px #cccccc;
+	margin: 0 auto;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+#header{
+	height: 100px;
+	border: solid 1px #000;
+}
+
+.borde{
+	border: solid 1px #000;
+}
+
+.shuperlogo{
+	margin-top: 10px;
+	margin-left: 25px;
+}
+#contenido{
+	width: 950px;
+	min-height:400px ;
+	overflow: hidden;
+}
+
+#menu{
+	width: 200px;
+	height: 390px;
+	float: left;
+}
+
+#contenido-der{
+	width: 705px;
+	min-height: 390px;
+	float: right;
+	margin: 10px 15px 0px 5px;
+	border: solid 1px #ccc;
+	padding: 10px;
+}
+#footer{
+	margin:5px;
+	text-align: right;
+	font-size: 10px;
+	clear: both;
+}
+
+#menu_acor{
+	margin: 10px 3px 0px 12px;
+}
+
+#menu_acor a:link{
+	text-decoration: none;
+}
+.menu1{
+    background-color: #2276bd;
+    height: 28px;
+    text-align: center;
+    color:#fff;
+    margin-top:5px;
+    padding-top: 5px;
+}
+
+.menu2{
+	margin-top:5px;
+	padding-top: 5px;
+    background-color: #d6d4d5;
+    height: 28px;
+    text-align: center;
+    color:#57585a;
+}
+
+.texto-centro{
+	text-align: center;
+}
+
+.persona{
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.comentario{
+	text-align: justify;
+	text-indent: 50px;
+}
+
+.fecha{
+	color: #57585a;
+	text-align: right;
+}
